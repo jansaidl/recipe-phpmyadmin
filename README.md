@@ -14,7 +14,7 @@ services:
   - hostname: phpmyadmin
     type: php-nginx@8.4
     enableSubdomainAccess: true
-    buildFromGit: https://github.com/zeropsio/recipe-phpmyadmin
+    buildFromGit: https://github.com/jansaidl/recipe-phpmyadmin
 ```
 See the [Zerops documentation](https://docs.zerops.io/references/import) and [zerops.yaml](https://github.com/zeropsio/recipe-adminer/blob/main/zerops.yml) to understand how to use it.
 
