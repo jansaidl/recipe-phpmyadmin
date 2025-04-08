@@ -6,5 +6,6 @@ zerops:
         - "composer create-project phpmyadmin/phpmyadmin --repository-url=https://www.phpmyadmin.net/packages.json --no-dev"
       deployFiles:
         - ./phpmyadmin/~
+        - ./config.inc.php
     run:
       base: php-nginx@8.4
