@@ -1,0 +1,10 @@
+zerops:
+  - setup: phpmyadmin
+    build:
+      base: php@8.3
+      buildCommands:
+        - "composer create-project phpmyadmin/phpmyadmin --repository-url=https://www.phpmyadmin.net/packages.json --no-dev"
+      deployFiles:
+        - ./phpmyadmin/~
+    run:
+      base: php-nginx@8.4
